@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap');
+
 
 body {
   margin: 0%;
@@ -146,6 +148,66 @@ header {
 .left p {
   color: rgba(240, 248, 255, 0.723);
 }
+#font-style-1{
+     font-family: "Grey Qo", cursive;
+     letter-spacing: 9px;
+     font-weight: 500;
+     
+}
+
+
+/* change habit styles */
+
+.change-habit{
+     padding: 100px 0;
+     background-color: black;
+}
+.change-habit-description{
+     text-align: center;
+     width: 60%;
+     margin: 0 auto;
+}
+.change-habit-description h3{
+     color: rgba(255, 255, 255, 1);
+     font-size: 3rem;
+     font-weight: 900;
+     margin-bottom: 20px;
+}
+.change-habit-description p{
+     font-size: 1rem;
+     color:rgba(255, 255, 255, .5);
+     margin-bottom: 50px;
+     font-weight: 400;
+}
+.change-habit-images{
+     display: grid;
+     grid-template-columns: repeat(4,1fr);
+}
+.image-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+.image-container h5{
+     font-size: 1.25rem;
+     color: white;
+     margin: 10px 0;
+     font-weight: 400;
+ }
+ .image-container p{
+     color: rgba(255, 255, 255, .5);
+     font-size: 1rem;
+     text-align: center;
+     font-weight: 400;
+ }
+ .image-container img{
+     width: 100%;
+     height: 100%;
+border: 3px solid rgb(51, 49, 49);
+ border-radius: 50%;
+ }
+
 
 /* responsive media query */
 
@@ -172,4 +234,16 @@ header {
   .btn-2{
      width: 40%;
   }
+  .change-habit-description{
+     width: 100%;
+  }
+  .change-habit-images{
+     grid-template-columns: 1fr;
+  }
+  .change-habit-description h3{
+     font-size: 2rem;
+  }
+  .image-container{
+     margin-bottom: 30px;
+ }
 }
