@@ -240,15 +240,70 @@ header {
   color: rgba(255, 255, 255, 0.5);
   margin: 20px 0;
 }
-/* .extra-run-image{
-     border-radius: 18px;
-} */
+
 .extra-run-image img {
-  /* padding: 50%; */
   width: 366px;
   height: 312px;
   border-radius: 18px;
-  margin: 50px ;
+  margin: 50px;
+}
+
+/* meet team styles */
+.meet-team {
+  padding: 70px 0;
+  background-color: black;
+}
+.team-description {
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+}
+.team-description h3 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 900;
+}
+.team-description p {
+  margin: 20px 0 50px 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+}
+.meet-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 16px;
+}
+.meet-image {
+  position: relative;
+  width: 33%;
+  height: 400px;
+}
+.meet-image img {
+  width: 300%;
+  height: 100%;
+  border-radius: 18px;
+}
+.name-mate {
+  position: absolute;
+  top: 80%;
+  left: 20%;
+  width: 200%;
+}
+.name-mate h5 {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 900;
+  margin: 0px;
+}
+.name-mate p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /* responsive media query */
@@ -264,7 +319,8 @@ header {
   .menu-bar {
     display: inline-block;
   }
-  .banner-container, .extra-run-container {
+  .banner-container,
+  .extra-run-container {
     flex-direction: column;
   }
   .banner-description h1 {
@@ -279,17 +335,25 @@ header {
   .change-habit-description {
     width: 100%;
   }
-  .change-habit-images {
+  .change-habit-images,
+  .meet-images {
     grid-template-columns: 1fr;
   }
-  .change-habit-description h3, .extra-run-description h3 {
+  .change-habit-description h3,
+  .extra-run-description h3 {
     font-size: 2rem;
   }
   .image-container {
     margin-bottom: 30px;
   }
-  .extra-run-description, .extra-run-image img{
-     width: calc(100% - 90px);
-        /* padding: 30px; */
+  .extra-run-description,
+  .extra-run-image img,
+  .bmi-chart {
+    width: calc(100% - 90px);
+    /* padding: 30px; */
+  }
+  .bmi-description {
+    width: 90%;
+    margin: 0 auto;
   }
 }
