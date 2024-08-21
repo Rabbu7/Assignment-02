@@ -77,15 +77,18 @@ header {
   font-size: 1rem;
   color: white;
   padding: 15px 45px;
-  border: none;
+  
 }
 .btn-1 {
   border-radius: 42px;
   background: rgb(230, 83, 60);
+  border: none;
 }
 .btn-2 {
+  box-sizing: border-box;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 42px;
+  background: black;
 }
 .banner-content .banner-image {
   height: 100%;
