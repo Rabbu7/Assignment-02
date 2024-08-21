@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+body {
+  margin: 0%;
+}
 .roboto-font {
   font-family: "Roboto", sans-serif;
 }
@@ -14,14 +17,14 @@ li {
 }
 /* nav styles */
 header {
-  background: rgb(17, 17, 17);
+ background: black;
 }
 .nav-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
+  padding: 0 auto;
 }
 .nav-name {
   color: rgb(230, 83, 60);
@@ -52,18 +55,121 @@ header {
   display: none;
 }
 
+/* banner styles */
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+}
+.banner-description {
+  /* margin-right: 50%; */
+}
+.banner-description h1 {
+  color: rgb(255, 255, 255);
+  font-weight: 900;
+  font-size: 4rem;
+}
+.banner-description p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+}
+.banner-description button {
+  font-size: 1rem;
+  color: white;
+  padding: 15px 45px;
+  border: none;
+}
+.btn-1 {
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+}
+.btn-2 {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 42px;
+}
+.banner-content .banner-image {
+  height: 100%;
+  width: 85%;
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+.banner-image img {
+  height: 100%;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 20px;
+  position: absolute;
+  top: 75%;
+  left: 15%;
+
+  height: 80px;
+  width: 160px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.right .circle {
+  background-color: rgb(230, 83, 60);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.right-text h3 {
+  font-size: 1.5rem;
+  color: rgb(250, 250, 249);
+}
+.right-text p {
+  color: rgba(239, 237, 232, 0.65);
+}
+.left {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 120px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+.left h2 {
+  font-size: 2.5rem;
+  color: aliceblue;
+  margin: 0px;
+}
+.left p {
+  color: rgba(240, 248, 255, 0.723);
+}
 
 /* responsive media query */
 
-@media  screen and (max-width:576px) {
-     .primary-width{
-         max-width: 90%;
-         margin: 0 auto;
-     }
-     .navbar{
-          display: none;
-     }
-     .menu-bar{
-          display: inline-block;
-     }
+@media screen and (max-width: 576px) {
+  .primary-width {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .navbar {
+    display: none;
+  }
+  .menu-bar {
+    display: inline-block;
+  }
+  .banner-container{
+     flex-direction: column;
+  }
+  .banner-description h1{
+     font-size: 2.25rem;
+  }
+  .btn-1{
+     width: 40%;
+  }
+  .btn-2{
+     width: 40%;
+  }
 }
